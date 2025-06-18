@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Yu</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Official website for Michael Yu - Director, Musician, Producer, and Artist.">
+    <meta name="keywords" content="Michael Yu, Director, music, musician, producer, artist">
+    <meta name="author" content="Michael Yu">
+    <meta name="robots" content="index, follow">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Michael Yu">
+    <meta property="og:image" content="images/album_cover.jpg">
+    <meta property="og:url" content="https://mchaelyu.com/">
+    <meta property="og:site_name" content="Michael Yu">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Michael Yu">
+    <meta name="twitter:image" content="images/album_cover.jpg">
+    <meta name="twitter:site" content="@mchaelyu">
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&family=Poppins:wght@600&display=swap" rel="stylesheet">
+    <style>
+        /* Apply custom fonts */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #121212;
+        }
+        .font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+        /* Simple fade-in animation */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .fade-in {
+            animation: fadeIn 0.8s ease-out forwards;
+        }
+        /* Add a subtle glow to the album art on hover */
+        .album-art:hover {
+            box-shadow: 0 0 35px 5px rgba(255, 255, 255, 0.15);
+            transform: scale(1.02);
+            transition: all 0.3s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white antialiased">
+
+    <!-- Main Container -->
+    <div class="container mx-auto max-w-4xl p-4 sm:p-6 lg:p-8">
+        
+        <div class="fade-in">
+            <!-- Header Section -->
+            <header class="text-center mb-10">
+                <h1 class="font-poppins text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white">
+                    Michael Yu
+                </h1>
+                <p class="mt-2 text-xl sm:text-2xl text-gray-400">
+                    More coming soon...
+                </p>
+            </header>
+
+            <!-- Main Content Grid -->
+            <main class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
+
+                <!-- Left Column: Album Art -->
+                <div class="w-full">
+                    <img 
+                        src="images/album_cover.jpg" 
+                        alt="Album Art for Transient by Michael Yu" 
+                        class="album-art w-full h-auto rounded-lg shadow-2xl aspect-square object-cover transition-all duration-300 ease-in-out"
+                        onerror="this.onerror=null;">
+                </div>
+
+                <!-- Right Column: Details & Links -->
+                <div class="flex flex-col justify-center">
+                    
+                    <!-- Streaming Links -->
+                    <div>
+                        <h2 class="font-poppins text-3xl font-extrabold mb-1 text-center md:text-left text-white">Transient</h2>
+                        <h2 class="font-poppins text-xl font-semibold mb-4 text-center md:text-left text-gray-300">Listen Now</h2>
+                        <div class="flex flex-col space-y-3">
+                            <!-- Spotify Button -->
+                            <a href="#" class="flex items-center justify-center bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-300">
+                                <img src="images/spotify.svg" alt="Spotify" class="w-6 h-6 mr-3" style="filter: invert(1) brightness(2);" />
+                                Spotify
+                            </a>
+                            <!-- Apple Music Button -->
+                            <a href="#" class="flex items-center justify-center bg-red-600 hover:bg-red-700 text-white font-bold py-3 px-4 rounded-lg transition-colors duration-300">
+                                <img src="images/applemusic.svg" alt="Apple Music" class="w-6 h-6 mr-3" style="filter: invert(1) brightness(2);" />
+                                Apple Music
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Tracklist -->
+                    <div class="mt-8">
+                        <h3 class="font-poppins text-xl font-semibold mb-3 text-center md:text-left">Tracklist</h3>
+                        <ol class="list-decimal list-inside text-gray-300 space-y-2">
+                            <li>Coming Soon</li>
+                        </ol>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Footer Section -->
+            <footer class="text-center mt-12 border-t border-gray-700 pt-6">
+                <div class="flex justify-center space-x-6 mb-4">
+                    <!-- Twitter/X -->
+                    <a href="https://x.com/mchaelyu/" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Twitter / X">
+                        <img src="images/x.svg" alt="X (Twitter)" class="w-6 h-6" style="filter: invert(1) brightness(2);" />
+                    </a>
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@mchaelyu" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="YouTube">
+                        <img src="images/youtube.svg" alt="YouTube" class="w-6 h-6" style="filter: invert(1) brightness(2);" />
+                    </a>
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/mchaelyu/" class="text-gray-400 hover:text-white transition-colors duration-300" aria-label="Instagram">
+                        <img src="images/instagram.svg" alt="Instagram" class="w-6 h-6" style="filter: invert(1) brightness(2);" />
+                    </a>
+                </div>
+                <p class="text-gray-500 text-sm">
+                    &copy; 2025 Michael Yu. All Rights Reserved.
+                </p>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
